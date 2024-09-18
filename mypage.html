@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FTU-web</title>
+</head>
+
+<body class="fade-in">
+    <div id="main-contents">
+        <!-- ナビバー -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark py-3 sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="loading.html">
+                    <h2 class="pt-2 text-white">FTU</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">ホーム</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#departments">学部</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#campus">キャンパス</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faculty">教員紹介</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#student-life">学生生活</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">ニュース</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- はじめに -->
+        <div class="hero vh-100 d-flex align-items-center" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 mx-auto text-center">
+                        <h1 class="display-4 text-white">未来技術大学</h1>
+                        <p class="text-white my-3">Future Technology University</p>
+                        <p class="text-white my-3">
+                            本学は最先端の技術を学び、学生の創造力を育みます。
+                            次世代のリーダー・イノベーターを育成し、社会に貢献することが我々の使命です。
+                        </p>
+                        <a href="#" class="btn btn-outline-light">公式LINE登録</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 学部一覧 -->
+        <section id="departments" class="bg-light">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 class="text-primary">FACULTY</h6>
+                        <h1>学部一覧</h1>
+                        <p>
+                            全キャンパスの学部一覧です。
+                        </p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="department card-effect">
+                            <div class="iconbox">
+                                <i class="bx bxs-comment-detail"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">情報科学部</h5>
+                            <p>
+                                キャンパス：吉祥寺
+                            </p>
+                            <p>
+                                内容：データ処理、ネットワーク技術、AIの基礎を習得する。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="department card-effect">
+                            <div class="iconbox">
+                                <i class='bx bx-network-chart'></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">ネットワーク技術学部</h5>
+                            <p>
+                                キャンパス：上田
+                            </p>
+                            <p>
+                                内容：ネットワーク構築と通信技術の基礎と応用を学ぶ。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="department card-effect">
+                            <div class="iconbox">
+                                <i class='bx bx-data'></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">データサイエンス学部</h5>
+                            <p>
+                                キャンパス：上田
+                            </p>
+                            <p>
+                                内容：データ分析と統計手法を駆使して実世界の問題を解決。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="department card-effect">
+                            <div class="iconbox">
+                                <i class='bx bxs-lock'></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">サイバーセキュリティ学部</h5>
+                            <p>
+                                キャンパス：上田
+                            </p>
+                            <p>
+                                内容：セキュリティ対策と倫理的ハッキングの技術を学ぶ。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="department card-effect">
+                            <div class="iconbox">
+                                <i class='bx bx-cog'></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">ソフトウェア学部</h5>
+                            <p>
+                                キャンパス：吉祥寺
+                            </p>
+                            <p>
+                                内容：ソフトウェア開発プロセスとプロジェクト管理を学ぶ。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="department card-effect">
+                            <div class="iconbox">
+                                <i class='bx bxs-chip'></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">コンピュータサイエンス学部</h5>
+                            <p>
+                                キャンパス：越谷
+                            </p>
+                            <p>
+                                内容：高度なプログラミング技術とシステム設計を学ぶ。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-6">
+                    <div class="col-md-2 mx-auto py-5 text-center">
+                        <u><a href="#departments">Learn more→</a></u>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- キャンパス -->
+        <section id="campus">
+            <div class="container-fluid">
+                <div class="row mb-4">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 class="text-primary">CAMPUS</h6>
+                        <h1>キャンパス一覧</h1>
+                        <p>
+                            本学は3つのキャンパスを構えています。
+                        </p>
+                    </div>
+                </div>
+                <div id="carouselExample" class="carousel slide py-1 px-1">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row w-100 bg-light py-0">
+                                <div class="col-lg-6 col-img1 py-3">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h6 class="text-primary">TOKYO</h6>
+                                            <h1>吉祥寺キャンパス</h1>
+                                            <p>
+                                                ・JR中央線・京王井の頭線「吉祥寺駅」北口より徒歩10分
+                                            </p>
+                                            <p>
+                                                ・京王バス「吉祥寺駅北口」バス停から「未来技術大学前」下車徒歩3分
+                                            </p>
+                                            <div class="feature d-flex mt-5">
+                                                <div class="iconbox me-3">
+                                                    <i class="bx bxs-comment-detail"></i>
+                                                </div>
+                                                <p>
+                                                    東京都吉祥寺キャンパスは、都市型キャンパスとして最新の設備と快適な学習環境を提供しています。多くの企業や研究機関との連携が強く、インターンシップや就職活動にも有利な環境が整っています。キャンパス内には先端技術を用いたラボや、学生が自由に利用できるコワーキングスペースが設けられており、学生の創造力とイノベーションを支援します。アクセスの良さも魅力で、学生は東京の中心地へのアクセスが容易です。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row w-100 bg-light py-0">
+                                <div class="col-lg-6 col-img2 py-5">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h6 class="text-primary">NAGANO</h6>
+                                            <h1>上田キャンパス</h1>
+                                            <p>
+                                                ・JR北陸新幹線「上田駅」からシャトルバスで約20分
+                                            </p>
+                                            <p>
+                                                ・しなの鉄道「大学前駅」から徒歩15分
+                                            </p>
+                                            <div class="feature d-flex mt-5">
+                                                <div class="iconbox me-3">
+                                                    <i class="bx bxs-comment-detail"></i>
+                                                </div>
+                                                <p>
+                                                    長野県上田キャンパスは、静かで美しい自然環境の中に位置しており、リラックスしながら学びたい学生に最適です。このキャンパスは特にサイバーセキュリティとネットワーク技術に力を入れており、先進的なセキュリティラボや実践的なトレーニング施設が充実しています。また、地域社会との連携も深く、地元企業や自治体と共同で行うプロジェクトも多数あります。上田キャンパスの学生は、自然と調和した環境の中で高度な専門知識を身につけることができます。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row w-100 bg-light py-0">
+                                <div class="col-lg-6 col-img3 py-5">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h6 class="text-primary">SAITAMA</h6>
+                                            <h1>越谷キャンパス</h1>
+                                            <p>
+                                                ・東武スカイツリーライン「越谷駅」西口よりバス15分、「○○大学前」下車
+                                            </p>
+                                            <p>
+                                                ・東武スカイツリーライン「越谷駅」西口よりバス15分、「○○大学前」下車
+                                            </p>
+                                            <div class="feature d-flex mt-5">
+                                                <div class="iconbox me-3">
+                                                    <i class="bx bxs-comment-detail"></i>
+                                                </div>
+                                                <p>
+                                                    埼玉県越谷キャンパスは、自然豊かな環境でありながら、都市機能も充実している理想的な学習環境を提供しています。このキャンパスは特に情報科学とデータサイエンスに重点を置いており、高度なデータ分析や研究プロジェクトに取り組むための施設が整っています。また、広大な敷地を活かした屋外イベントやスポーツ活動も盛んで、学生の生活の質を高める様々な活動が行われています。越谷キャンパスでは、学生が集中して学び、研究に没頭できる環境が整っています。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 教員 -->
+        <section id="faculty" class="bg-light">
+            <div class="container">
+                <div class="row mb-4 ">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 class="text-primary">TEACHER</h6>
+                        <h1>教員の紹介</h1>
+                        <p>
+                            一部教員を紹介します。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="member card-effect text-center">
+                            <img src="./img/tanaka.jpeg" alt="">
+                            <h5 class="mb-0 mt-4">田中 太郎</h5>
+                            <p>コンピュータサイエンス、機械学習</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bx bxl-facebook"></i></a>
+                                <a href="#"><i class="bx bxl-twitter"></i></a>
+                                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="member card-effect text-center">
+                            <img src="./img/yamada.jpeg" alt="">
+                            <h5 class="mb-0 mt-4">山田 花子</h5>
+                            <p>データサイエンス、ビッグデータ解析</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bx bxl-facebook"></i></a>
+                                <a href="#"><i class="bx bxl-twitter"></i></a>
+                                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="member card-effect text-center">
+                            <img src="./img/suzuki.jpeg" alt="">
+                            <h5 class="mb-0 mt-4">鈴木 一郎</h5>
+                            <p>サイバー、ネットワークセキュリティ</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bx bxl-facebook"></i></a>
+                                <a href="#"><i class="bx bxl-twitter"></i></a>
+                                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="member card-effect text-center">
+                            <img src="./img/satou.jpeg" alt="">
+                            <h5 class="mb-0 mt-4">佐藤 由美</h5>
+                            <p>ソフトウェア工学、アジャイル開発</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bx bxl-facebook"></i></a>
+                                <a href="#"><i class="bx bxl-twitter"></i></a>
+                                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-6">
+                    <div class="col-md-2 mx-auto py-5 text-center">
+                        <u><a href="#faculty">Learn more→</a></u>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学生生活 -->
+        <section id="student-life">
+            <div class="container-fluid">
+                <div class="row mb-4">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 class="text-primary">LIFE</h6>
+                        <h1>学生生活</h1>
+                        <p>
+                            本大学では、学生が充実した大学生活を送るために、多彩なプログラムとサポート体制を整えています。学業だけでなく、課外活動やキャンパスライフを通じて、個々の成長と多様な経験をサポートします。
+                        </p>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="life">
+                            <img src="/img/campus-life.jpeg" alt="">
+                            <div class="overlay">
+                                <div>
+                                    <h4 class="text-white">キャンパスライフ</h4>
+                                    <h6 class="text-white">
+                                        キャンパス内には、学生がリラックスできるカフェテリアや、グループワークに適したコワーキングスペースが充実しています。
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="life">
+                            <img src="/img/activities.jpeg" alt="">
+                            <div class="overlay">
+                                <div>
+                                    <h4 class="text-white">クラブ・サークル</h4>
+                                    <h6 class="text-white">
+                                        スポーツ系から文化系まで、興味に合わせて参加できるクラブが豊富にあり、新しい仲間との出会いがあります。
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="life">
+                            <img src="/img/support.jpeg" alt="">
+                            <div class="overlay">
+                                <div>
+                                    <h4 class="text-white">学生サポート</h4>
+                                    <h6 class="text-white">
+                                        学業や生活に関する悩みを相談できる学生相談室や、キャリアカウンセリングや就職支援も充実しており、卒業後のキャリア形成をサポートします。
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="life">
+                            <img src="/img/festival.jpeg" alt="">
+                            <div class="overlay">
+                                <div>
+                                    <h4 class="text-white">イベント</h4>
+                                    <h6 class="text-white">新入生歓迎会、学園祭、スポーツ大会、文化イベントなど、学生同士の交流を深める機会が豊富にあります。</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-6">
+                    <div class="col-md-2 mx-auto py-5 text-center">
+                        <u><a href="#student-life">Learn more→</a></u>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お知らせ -->
+        <section id="news" class="bg-light">
+            <div class="container">
+                <div class="row mb-4 ">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 class="text-primary">NEWS</h6>
+                        <h1>大学からの最新のニュース</h1>
+                        <p>
+                            大学でのイベントなどの投稿を掲載しています。
+                        </p>
+                    </div>
+                    <div class="timeline">
+                        <a class="twitter-timeline" data-height="500"
+                            href="https://twitter.com/TDU_webmaster?ref_src=twsrc%5Etfw">
+                            Tweets by TDU_webmaster</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="blog-card card-effect">
+                                <img src="./img/almond.jpg" alt="">
+                                <h5 class="mb-0 mt-4"><a href="#">
+                                        佐藤さん、国際アーモンドコンテスト【プラチナ賞】受賞
+                                    </a></h5>
+                                <p>
+                                    毎年、世界各国から参加するアーモンド生産者や製品開発者が集うイベント。最高品質のアーモンドを競うコンテストと、新しい製品の展示会を兼ねています。
+                                </p>
+                                <p class="text-end">2024/6</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="blog-card card-effect">
+                                <img src="./img/pistachio.jpeg" alt="">
+                                <h5 class="mb-0 mt-4">
+                                    丸山さん、ピスタチオ学会【殻割り部門】優勝
+                                </h5>
+                                <p>
+                                    ピスタチオ愛好家や農家が集まり、最も効率的かつ美しくピスタチオの殻を割る技術を競います。技術向上と楽しみを目的とし、新たな割り方や技術の発展を追求します。
+                                </p>
+                                <p class="text-end">2023/12</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="blog-card card-effect">
+                                <img src="./img/nuts.jpeg" alt="">
+                                <h5 class="mb-0 mt-4">
+                                    日本ピーナッツ連盟会長に田中教授が就任
+                                </h5>
+                                <p>
+                                    日本全国のピーナッツ生産者や消費者が集う団体で、品質の向上と普及を目指します。地域ごとの特産品の紹介や、健康に関する情報提供、新しい利用法の開発を行っています。
+                                </p>
+                                <p class="text-end">2022/8</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-6">
+                    <div class="col-md-2 mx-auto py-5 text-center">
+                        <u><a href="#news">Learn more→</a></u>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせ -->
+        <section id="contact">
+            <div class="container">
+                <div class="row mb-4 ">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 class="text-primary">CONTACT</h6>
+                        <h1>お問い合わせ</h1>
+                        <p>
+                            ご質問やご意見、内容な情報が必要な場合は、以下の方法でお問い合わせください。学生の皆様、保護者の皆様、企業や地域の皆様からのご連絡をお待ちしております。
+                        </p>
+                    </div>
+                </div>
+                <form action="" class="row g-3 justify-content-center">
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="氏名">
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="メールアドレス">
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" placeholder="主なタイトル">
+                    </div>
+                    <div class="col-md-10">
+                        <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="内容"></textarea>
+                    </div>
+                    <div class="col-md-10 d-grid">
+                        <button class="btn btn-primary">送信</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- フッター -->
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row gy-4">
+                        <div class="col-md-4 py-3">
+                            <u>
+                                <h4 class="text-white">未来技術大学</h4>
+                            </u>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <u>
+                                    <h5 class="text-white">SNS</h5>
+                                </u>
+                                <ul class="list-unstyled">
+                                    <div class="social-icons-footer">
+                                        <li><a href="#facebook"><i class="bx bxl-facebook"></i></a></li>
+                                        <li><a href="#instagram"><i class="bx bxl-instagram-alt"></i></li>
+                                        <li><a href="#twitter"><i class="bx bxl-twitter"></i></a></li>
+                                        <li><a href="#youtube"><i class="bx bxl-youtube"></i></a></li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <u>
+                                    <h5 class="text-white">キャンパス</h5>
+                                </u>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">吉祥寺キャンパス</a></li>
+                                    <li><a href="#">上田キャンパス</a></li>
+                                    <li><a href="#">越谷キャンパス</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <u>
+                                    <h5 class="text-white">学部情報</h5>
+                                </u>
+                                <ul class="list-unstyled">
+                                    <li><a href="#departments">情報科学部</a></li>
+                                    <li><a href="#departments">ネットワーク技術学部</a></li>
+                                    <li><a href="#departments">データサイエンス学部</a></li>
+                                    <li><a href="#departments">サイバーセキュリティ学部</a></li>
+                                    <li><a href="#departments">ソフトウェア学部</a></li>
+                                    <li><a href="#departments">コンピュータサイエンス学部</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <u>
+                                    <h5 class="text-white">大学情報</h5>
+                                </u>
+                                <ul class="list-unstyled">
+                                    <li>住所: 東京都〇〇市△△１－２－３</li>
+                                    <li>メール: ftu@mail.com</li>
+                                    <li>電話番号: 111-222-333</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="load.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

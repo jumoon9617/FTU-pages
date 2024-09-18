@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700;900&family=Sora:wght@400;700&display=swap");
+
+/* ロード画面*/
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 画面の高さいっぱいにスピナーを表示 */
+    opacity: 0;
+    /* 初期状態は非表示 */
+    transition: opacity 0.3s ease-in;
+    /* フェードインのトランジション設定 */
+}
+
+.spinner-visible {
+    opacity: 1;
+    /* 表示時の透明度 */
+}
+
+.fade-in {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Twitter管理 */
+.timeline {
+    max-width: 100%;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+:root {
+    --primary: #198d8d;
+    --dark: #21252f;
+    --body: #888;
+    /* --orange: rgb(221, 155, 94); */
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: Sora, "sans-serif";
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.logo {
+    width: 160px;
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+    color: #198d8d !important;
+}
+
+.btn {
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 0;
+}
+
+.hero {
+    background-image: url(./img/university.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(37, 39, 71, 0.7);
+    z-index: -1;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.iconbox {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: white;
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
+}
+
+.department {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.department::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.department:hover h5,
+.department:hover p {
+    color: white;
+}
+
+.department:hover .iconbox {
+    background-color: #fff;
+    color: var(--primary);
+}
+
+.department:hover::after {
+    opacity: 1;
+    top: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: none;
+    /* 背景の薄い白を無効化 */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: none;
+    /* ボタンの背景色を削除 */
+    border: #000000;
+    /* ボタンの境界線を黒に */
+}
+
+/* キャンパス紹介 */
+.col-img1 {
+    background-image: url(/img/kichijoji.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.col-img2 {
+    background-image: url(/img/ueda.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.col-img3 {
+    background-image: url(/img/koshigaya.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.life {
+    position: relative;
+    overflow: hidden;
+}
+
+.life .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 39, 71, 0.7);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.life img {
+    transition: all 0.4s ease;
+}
+
+.life:hover .overlay {
+    opacity: 1;
+}
+
+.life:hover img {
+    transform: scale(1.1);
+}
+
+/* 教員 */
+.member img {
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a {
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    color: #fff;
+    /* iのアイコンをaの中で中央揃えしてるみたい。
+    １つの要素に対して中央に寄せるときに親要素に
+    flexを付ける場合もある。 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+form input.form-control {
+    height: 56px;
+}
+
+form .form-control {
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.footer-top {
+    padding-bottom: 90px;
+    padding: 90px;
+    background-color: var(--dark);
+}
+
+.footer-top a {
+    color: var(--body);
+}
+
+.footer-top a:hover {
+    color: #fff;
+}
